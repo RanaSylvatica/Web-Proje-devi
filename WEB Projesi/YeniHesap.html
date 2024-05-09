@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş yap</title>
+    <link rel="stylesheet" href="YeniHStil.css" >
+</head>
+<body>
+<div class="container">
+    <div class="renk">
+        <ul>
+            <li><a href="AnaSayfa.html" >ANA SAYFA</a></li>
+
+            <li><a href="Hakkımda.html">HAKKIMDA</a></li>
+            <li><a href="ilgialanlarim.html" >İLGİ ALANLARIM</a></li>
+
+            <li><a href="sehrim.html">ŞEHRİM</a></li>
+            <li><a href="mirasimiz.html" >MİRASIMIZ</a></li>
+            <li><a href="GirisYap.html" class="active" >GİRİŞ YAP</a></li>
+
+
+
+        </ul>
+        
+    </div>
+    <div class="center2">
+             
+             <h2>HESAP OLUŞTUR!</h2>
+
+             <form name="kayitFormu" action="http://localhost/deneme.php" method="POST"> 
+             <div class="box">
+                <label>Kullanıcı Adı</label>
+
+                <input type="email" required id="eposta" >
+             </div>
+             <div class="box">
+                <label name="sifre" id="1sifre">Şifre</label>
+
+                <input type="password" required>
+            </div> 
+            <div class="box">
+                <label name="sifreTekrar" id="2sifre">Şifre Tekrar</label>
+
+                <input type="password" required>
+            </div> 
+            
+            <div class="box">
+                <label>Doğum Tarihi</label>
+                <input type="date" name="dogumgunu" id="dogumgunu"required >
+            </div>
+            <div class="CinsiyetBaslik">
+            <label>Cinsiyet</label><br>
+        </div>
+            <div class="Cinsiyet">
+                <input type="radio" name="Cinsiyet" id="kadin"required >
+                <label for="Cinsiyet">Kadın</label> 
+                <input type="radio" name="Cinsiyet" id="erkek"required >
+                <label for="Cinsiyet">Erkek </label>
+            </div>
+            
+             <input onclick="sifreKontrol();" type="submit" value="Kayıt Ol">
+            
+            <div class="Girisy">
+            <p>Zaten bir hesabınız var mı?<a href="GirisYap.html"> Giriş yap.</a></p>
+            </div>
+</form>
+            
+
+
+
+            
+    </div>
+</div>
+<script src="YeniHesap.js"></script>
+
+
+
+</body>
+</html>
