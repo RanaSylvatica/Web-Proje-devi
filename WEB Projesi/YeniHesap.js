@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
         }
         else
         {
-            if(atpos < 1  || dotpos + 2 >= email_length)
+            if(atpos < 1  || dotpos < atpos + 2 ||dotpos + 2 >= email_length)
             {
                 alert("Geçersiz email!");
                 return false;
@@ -59,5 +59,8 @@ window.addEventListener('scroll', function() {
         return true;
         
             
+    }
+    function reset() {
+        document.getElementById("kayitFormu").reset();
     }
 

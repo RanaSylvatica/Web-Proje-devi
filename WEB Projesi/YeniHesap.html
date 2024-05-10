@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giriş yap</title>
-    <link rel="stylesheet" href="YeniHStil.css" >
+    <title>Yeni Hesap</title>
+    <link rel="stylesheet" href="YeniHesap.css" >
    
 </head>
 <body>
@@ -12,13 +12,12 @@
 <div class="container">
     <div class="renk">
         <ul>
-            <li><a href="AnaSayfa.html">ANA SAYFA</a></li>
             <li><a href="Hakkımda.html">HAKKIMDA</a></li>
             <li><a href="ilgialanlarim.html" >İLGİ ALANLARIM</a></li>
             <li><a href="sehrim.html">ŞEHRİM</a></li>
             <li><a href="mirasimiz.html" >MİRASIMIZ</a></li>
             <li><a href="GirisYap.html"  >GİRİŞ YAP</a></li>
-            <li><a href="YeniHesap.html" class="active" >Kayıt Ol</a></li>
+            <li><a href="YeniHesap.html" class="active" >KAYIT OL</a></li>
         </ul>
         
     </div>
@@ -26,38 +25,44 @@
              
              <h2>HESAP OLUŞTUR!</h2>
 
-             <form name="kayitFormu" action="http://localhost/deneme.php" onsubmit="return control(this)" method="POST"> 
+             <form name="kayitFormu" action="YeniHesapp.php" onsubmit="return control(this)" method="POST"> 
              <div class="box">
                 <label>Kullanıcı Adı</label>
-                <input  id="eposta" >
+                <input  id="eposta" name="eposta" >
              </div>
              <div class="box">
                 <label >Şifre</label>
 
-                <input name="kayitSifresi" id="kayitSifresi" type="password" required>
+                <input name="kayitSifresi" id="kayitSifresi" type="password" >
             </div> 
             <div class="box">
                 <label >Şifre Tekrar</label>
 
-                <input name="kayitSifresiTekrar" id="kayitSifresiTekrar" type="password" required>
+                <input name="kayitSifresiTekrar" id="kayitSifresiTekrar" type="password" >
             </div> 
             
             <div class="box">
                 <label>Doğum Tarihi</label>
-                <input type="date" name="dogumgunu" id="dogumgunu"required >
+                <input type="date" name="dogumgunu" id="dogumgunu" >
             </div>
             <div class="CinsiyetBaslik">
             <label>Cinsiyet</label><br>
         </div>
             <div class="Cinsiyet">
-                <input type="radio" name="Cinsiyet" id="kadin"required >
+                <input type="radio" name="Cinsiyet" value="1" id="kadin"required >
                 <label for="Cinsiyet">Kadın</label> 
-                <input type="radio" name="Cinsiyet" id="erkek"required >
+                <input type="radio" name="Cinsiyet" value="2" id="erkek"required >
                 <label for="Cinsiyet">Erkek </label>
             </div>
-            
-             <input onclick="sifreKontrol();"  type="submit" value="Kayıt Ol">
-            
+            <input value="Kayıt Ol"  onclick="sifreKontrol();" type="submit" >
+            <input value="Hepsini Sil" onclick="reset();" type="button" >
+
+            <!-- <div class="kayitClass">
+                <button  type="submit" onclick="sifreKontrol();">Kayıt Ol</button>
+            </div>
+            <div class="resetClass">
+                <button  type="button" onclick="reset();">Hepsini Sil</button>
+            </div> -->
             <div class="Girisy">
             <p>Zaten bir hesabınız var mı?<a href="GirisYap.html"> Giriş yap.</a></p>
             </div>
