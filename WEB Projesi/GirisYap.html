@@ -7,19 +7,39 @@
     <link rel="stylesheet" href="style2.css" >
 </head>
 <body>
+    <script>
+   function formkontrol(form) {
+
+    var email = document.forms['girisFormu'][0].value; 
+    var pass = document.forms['girisFormu'][1].value;
+    var atpos = email.indexOf("@");
+    var dotpos = email.lastIndexOf(".");
+
+    if (email == "" || email == null || pass == "" || pass == null) {
+        alert("Lütfen boş alanları doldurunuz!");
+        return false;
+    }
+    else {
+        if (atpos <1 || dotpos + 2 >= email.length) {
+            alert("Geçerli email adresi giriniz!");
+            return false;
+        }
+    }
+    return true;
+}
+
+    
+    </script>
 <div class="container">
     <div class="renk">
         <ul>
-            <li><a href="AnaSayfa.html" >ANA SAYFA</a></li>
-
+            <li><a href="AnaSayfa.html" class="active">ANA SAYFA</a></li>
             <li><a href="Hakkımda.html">HAKKIMDA</a></li>
             <li><a href="ilgialanlarim.html" >İLGİ ALANLARIM</a></li>
-
             <li><a href="sehrim.html">ŞEHRİM</a></li>
             <li><a href="mirasimiz.html" >MİRASIMIZ</a></li>
-            <li><a href="GirisYap.html" class="active" >GİRİŞ YAP</a></li>
-
-
+            <li><a href="GirisYap.html" class="active"  >GİRİŞ YAP</a></li>
+            <li><a href="YeniHesap.html" >Kayıt Ol</a></li>
 
         </ul>
         
@@ -28,18 +48,18 @@
              
              <h2>GİRİŞ YAP!</h2>
 
-             <form action="http://localhost/deneme.php" method="POST"> 
+             <form name="girisFormu" action="http://localhost/deneme.php"  method="POST"> 
              <div class="box">
                 <label>Kullanıcı Adı</label>
 
-                <input type="email" required id="eposta" >
+                <input  name ="_eposta" id="_eposta" >
              </div>
              <div class="box">
-                <label >Şifre</label>
+                <label>Şifre</label>
 
-                <input type="Şifre" required0>
+                <input type="password" id="_Sifre" name="_Sifre" required>
             </div> 
-            <input type="submit" value="Giriş Yap">
+            <input type="submit" onclick="formkontrol();" value="Giriş Yap">
             <div class="KayitOl">
             <p>Daha önce hesap oluşturmadınız mı?<a href="YeniHesap.html"> Hesap Oluştur.</a></p>
             </div>
@@ -54,7 +74,7 @@
             
     </div>
 </div>
-<script src="YeniHesap.js"></script>
+<script src="Giris.js"></script>
 
 
 

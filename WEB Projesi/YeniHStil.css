@@ -33,7 +33,7 @@ body{
 }
 .renk ul li a {
     color: white;
-    font-size: 17px;
+    font-size: 15px;
     font-family: Poppins,sans-serif;
     text-decoration: none;
     padding: 10px
@@ -43,7 +43,7 @@ body{
 .renk ul li a.active,
 .renk ul li a:hover {
     background:rgba(230, 112, 91, 0.942);
-    transition: .2s;
+    transition: .5s;
 }
 .center2{
     position:absolute;
