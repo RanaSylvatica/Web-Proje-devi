@@ -1,17 +1,4 @@
-window.addEventListener('scroll', function() {
-    var sabitBlok = document.querySelector('.renk');
-    var container = document.querySelector('.container');
-    var containerYukseklik = container.offsetHeight;
-    var sabitBlokYukseklik = sabitBlok.offsetHeight;
-    
-    if (window.pageXOffset > containerYukseklik - sabitBlokYukseklik) {
-        sabitBlok.style.position = 'absolute';
-        sabitBlok.style.top = (containerYukseklik - sabitBlokYukseklik) + 'px';
-    } else {
-        sabitBlok.style.position = 'fixed';
-        sabitBlok.style.top = '0';
-    }
-});
+
     function sifreKontrol(){
         var sifre1=document.getElementById("kayitSifresi").value;
         var sifre2=document.getElementById("kayitSifresiTekrar").value;
