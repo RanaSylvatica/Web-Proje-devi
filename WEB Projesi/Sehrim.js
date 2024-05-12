@@ -1,33 +1,62 @@
-var mainImg = document.querySelector("img");
-var images=['images/agebzemeydan.jpg','images/bdarica.jpg','images/center.jpg','images/cayirova.png'];
-var num=0;  
-const auto=true;
+const ileri=document.getElementById('next');
+const geri =document.getElementById('#prev');
+
+const slider=document.querySelector('.image');
+const img=document.querySelector('.slider');
+const auto=0;
 const gecisSuresi=3000;
 let slideInterval
- 
-function ileri(){
-    num++
-    if(num>=images.length)
-    {
-        num=0;
-        mainImg.src=images[num];
-    }
-    else{
-        mainImg.src=images[num];
+
+// const imgLength =document.querySelector('.slider')
+// const sliderMax=(imgLength-1)*img.offsetWidth
+
+function ilerle(){
+    if(slider.scrollLeft<3000){
+       slider.scrollLeft+=1000;  
+    }else{
+        slider.scrollLeft=0;
     }
 }
-function geri(){
-    num--
-    if(num<0){
-        num=images.length-1;
-        mainImg.src=images[num];
-    }
-    else{
-        mainImg.src=images[num];
+function geriyedon(){
+    if(slider.scrollLeft>0){
+       slider.scrollLeft-=1000;  
+    }else{
+        slider.scrollLeft=3000;
     }
 }
 if(auto){
-    slideInterval=setInterval(ileri,gecisSuresi);
+        slideInterval=setInterval(ileri,gecisSuresi);
+
 }
+
+
+
+ 
+// function ilerle(){
+//    const activeSlide =document.querySelector('.avtice');
+//    activeSlide.classList.remove('active');
+
+
+//    if(activeSlide.nextElementSibling){
+//     activeSlide.nextElementSibling.classList.add('active');
+//    }
+//    else{
+//     image[0].classList.add('active');
+//    }
+// }
+// function geriyedon(){
+//     const activeSlide=document.querySelector('.active')
+//     activeSlide.classList.remove('active');
+//     if(activeSlide.previousElementSibling){
+//         activeSlide.previousElementSibling.add('active');
+//     }
+//     else{
+//         image[image.length-1].classList.add('active');
+//     }
+
+
+
+
+
 
 

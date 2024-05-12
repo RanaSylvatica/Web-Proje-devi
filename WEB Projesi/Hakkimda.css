@@ -138,7 +138,7 @@ background:  rgba(220, 97, 75, 0.942);
 border-color: #be3838;
 transition: .2s;
 }
-.hakkimda{
+.hakkimda,.sehrim {
     /* top:100%;
     left:50%; 
     transform: translate(-50%,-50%); */
@@ -154,18 +154,35 @@ transition: .2s;
     
 }
 
- .baslik0{
+/* .mirasimiz .row .image{
+    display: flex;
+    flex-wrap: wrap;
+    float:left;
+    left: 10%;
+    padding:6% 0 0 9%;
+    max-width:70%;
+    height: auto;
+}
+.mirasimiz.row{
+    column-gap: 2rem;
+}
+.mirasimiz.row.content{
+    font-family: Poppins,sans-serif;
+    padding: 20% 20% 0% 20%;
+    width: 100%;
+    font-weight: 120;
+} */
+
+.baslik0{
     background:  rgba(220, 97, 75, 0.942);
     width: 98,5%;
     color: white;
     font-family: Poppins,sans-serif;
     text-decoration: none;
     padding: 10px;
-
 }
-.hakkimda .row{
-    column-gap: 2rem; /**resim ile yazı arasinda 20 pixellik boşluk bırakır**/
-    
+.hakkimda .row , .sehrim .row{
+    column-gap: 2rem; /**resim ile yazı arasinda 20 pixellik boşluk bırakır**/   
 }
 .hakkimda .row .image{
     display: flex;
@@ -174,18 +191,14 @@ transition: .2s;
     padding:6% 0 0 9%;
     max-width:70%;
     height: auto;
-    
-
 }
 .hakkimda .row .content {
     font-family: Poppins,sans-serif;
-    padding: 20% 20% 0% 50%;
+    padding: 20% 30% 0% 50%;
     width: 100%;
-    font: weight 900;
+    font-weight: 120;
 }
-.hakkimda .row .content a{
-    color: #be3838;
-}
+
 .sehrim .row {
     align-items: center;
     background: rgba(255, 255, 255, 0.664);
@@ -195,29 +208,36 @@ transition: .2s;
     position: absolute;
     font-family: Roboto;
     font-size: 18px;
+    
 }
 .sehrim .row .image{
-    width: 980px;
-    height: 500px;
+    width: 1000px;
+    height: 550px;
     position: relative;
-    margin: 5% 20% 5% 10.5%;
+    margin: 5% 20% 5% 4%;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 
 }
 
-.sehrim .row .slider{
+.row .slider{
     border-radius: 15px;
 }
 
 .button{
     position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top:21%;
+    left: 35%;
+    height: 13%;
+    width: 25%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
+    justify-content: space-between;
 }
 .button i{
     color:  rgb(255, 255, 255);
@@ -228,14 +248,42 @@ transition: .2s;
    transition: 0.3s;
 
 }
-.content{
-    margin: 5% 10% 5% 10.5%;
+.contentSehrim{
+    font-family: Poppins,sans-serif;
+    padding: 0% 0% 0% 10%;
+    width: 0%;
+    font-weight: 120;
+    top: 0%;
+}
+.contentSehrim p{
+    margin: 10%;
+}
 
+.mirasimiz {
+    position:absolute;
+    font-family: Roboto;
+    background: rgba(255, 255, 255, 0.664);
+    color: rgb(35, 24, 24);
+    text-decoration :none;
+    font-size: 18px;
+    left: 7%;
+    right: 7%;
+    top:25%;
+    height: 2000px;
 }
-.content p{
-    margin: 18%;
+.mimage{
+    display: flex;
+    position: absolute;
+    float:left;
+    padding:6% 0 0 9%;
+
+    max-width:70%;
+    height: 40%;
 }
-.content iframe{
-    float: right;
-    right: 10%;
+.mcontent{
+
+font-family: Poppins,sans-serif;
+    padding: 20% 30% 0% 50%;
+    width: 100%;
+    font-weight: 120;
 }
