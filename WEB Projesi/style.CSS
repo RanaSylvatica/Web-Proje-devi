@@ -64,3 +64,26 @@ body{
     size: 5px 5px;
     
 }
+.ilgiAlanlarim{
+    position:absolute;
+    font-family: Roboto;
+    background: rgba(255, 255, 255, 0.664);
+    color: rgb(35, 24, 24);
+    text-decoration :none;
+    font-size: 18px;
+    left: 7%;
+    right: 7%;
+    top:25%;
+}
+.content{
+    padding: 2%;
+}
+.baslik0{
+    background:  rgba(220, 97, 75, 0.942);
+    width: 98,5%;
+    color: white;
+    font-family: Poppins,sans-serif;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 27px;
+}
