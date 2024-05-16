@@ -269,14 +269,16 @@ transition: .2s;
     left: 7%;
     right: 7%;
     top:25%;
-    height: 2000px;
+    width: 80%;
+    height: 100%;
 }
 .mimage{
     display: flex;
     position: absolute;
     float:left;
     padding:6% 0 0 9%;
-
+    
+    width: auto;
     max-width:70%;
     height: 40%;
 }

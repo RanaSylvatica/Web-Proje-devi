@@ -74,9 +74,13 @@ body{
     left: 7%;
     right: 7%;
     top:25%;
+    padding: 2%;
+    width: 80%;
+    height: 45%;
 }
 .content{
-    padding: 2%;
+    padding: 3%;
+    
 }
 .baslik0{
     background:  rgba(220, 97, 75, 0.942);
