@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş yap</title>
+    <link rel="stylesheet" href="style2.css" >
+</head>
+<body>
+    <!-- <script>
+        function reset() {
+            document.getElementById("girisFormu").reset();
+        }
+
+        function girisKontrol(form) {
+
+            var email = form._eposta.value;
+            var pass = form._Sifre.value;
+            var atpos = email.indexOf("@");
+            var dotpos = email.lastIndexOf(".");
+
+            if (email == "" || email == null || pass == "" || pass == null) {
+                alert("Lütfen boş alanları doldurunuz!");
+                return false;
+            }
+            else {
+                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+                    alert("Geçerli email adresi girin");
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script> -->
+    
+<div class="container">
+    <div class="renk">
+        <ul>
+            <li><a href="Hakkımda.html">HAKKIMDA</a></li>
+            <li><a href="OzGecmis.html">ÖZ GEÇMİŞ</a></li>
+            <li><a href="ilgialanlarim.html" >İLGİ ALANLARIM</a></li>
+            <li><a href="sehrim.html">ŞEHRİM</a></li>
+            <li><a href="mirasimiz.html" >MİRASIMIZ</a></li>
+            <li><a href="GirisYap.html" class="active"  >GİRİŞ YAP</a></li>
+            <li><a href="YeniHesap.html" >KAYIT OL</a></li>
+
+        </ul>
+        
+    </div>
+    <div class="center2">
+             
+             <h2>GİRİŞ YAP!</h2>
+
+             <form name="girisFormu" action="GirisYap.php" onsubmit="return girisKontrol(this)" method="POST"> 
+             <div class="box">
+                <label>Kullanıcı Adı</label>
+
+                <input  name ="_eposta" id="_eposta" >
+             </div>
+             <div class="box">
+                <label>Şifre</label>
+                <input type="password" id="_Sifre" name="_Sifre" >
+             </div>
+            
+                <!-- <button class="submit" type="submit" onclick="kayitKontrol();">Giriş Yap</button>
+            </div>
+                <button class="reset" type="button" onclick="reset();">Hepsini Sil</button>
+            </div> -->
+            <input value="Giriş Yap"  onclick="kayitKontrol();" type="submit" >
+            <input value="Hepsini Sil"   onclick="reset();" type="button" >
+            <div class="KayitOl">
+            <p>Daha önce hesap oluşturmadınız mı?<a href="YeniHesap.html"> Hesap Oluştur.</a></p>
+            </div>
+            
+
+
+</form>
+            
+
+
+
+            
+    </div>
+</div>
+<script src="Giris.js"></script>
+
+
+
+</body>
+</html>

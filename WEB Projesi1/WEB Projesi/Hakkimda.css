@@ -3,7 +3,6 @@
     padding:0;
     font-family: Poppins,sans-serif;
 }
-
 body{
     background-image: url(arkaplan.jpeg);
     height: 100vh;
@@ -17,7 +16,7 @@ body{
 }
 
 
-#renk {
+.renk {
     background-color: rgba(255, 99, 71, 0.256);
     margin: 0;
     padding: 32px 0;
@@ -25,27 +24,24 @@ body{
 
 }
 
-#renk ul {
+.renk ul {
     width: 50%;
     margin: 1% auto;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
-#renk ul li a {
+.renk ul li a {
     color: white;
     font-size: 15px;
     font-family: Poppins,sans-serif;
     text-decoration: none;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width:40%;
+    padding: 10px
 }
 
 
-#renk ul li a.active,
-#renk ul li a:hover {
+.renk ul li a.active,
+.renk ul li a:hover {
     background:rgba(230, 112, 91, 0.942);
     transition: .5s;
 }
@@ -195,7 +191,6 @@ transition: .2s;
     padding:6% 0 0 9%;
     max-width:70%;
     height: auto;
-    width: 300px;
 }
 .hakkimda .row .content {
     font-family: Poppins,sans-serif;
@@ -274,16 +269,14 @@ transition: .2s;
     left: 7%;
     right: 7%;
     top:25%;
-    width: 80%;
-    height: 100%;
+    height: 2000px;
 }
 .mimage{
     display: flex;
     position: absolute;
     float:left;
     padding:6% 0 0 9%;
-    
-    width: auto;
+
     max-width:70%;
     height: 40%;
 }

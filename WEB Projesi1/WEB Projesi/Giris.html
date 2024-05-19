@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş yap</title>
+    <link rel="stylesheet" href="girişStili.css" >
+</head>
+<body>
+<div class="container">
+    <div class="renk">
+        <ul>
+            <li><a href="Hakkımda.html">HAKKIMDA</a></li>
+            <li><a href="ilgialanlarim.html" >İLGİ ALANLARIM</a></li>
+            <li><a href="sehrim.html">ŞEHRİM</a></li>
+            <li><a href="mirasimiz.html" >MİRASIMIZ</a></li>
+            <li><a href="GirisYap.html" class="active" >GİRİŞ YAP</a></li>
+            <li><a href="YeniHesap.html" >Kayıt Ol</a></li>
+
+
+
+        </ul>
+        
+    </div>
+    <div class="merkez">
+             
+             <h2>GİRİŞ YAP!</h2>
+
+             <form action="http://localhost/deneme.php" method="POST"> 
+             <div class="kutucuk">
+                <label for="username">Kullanıcı Adı</label>
+                <input type="email" required id="eposta" name="username" >
+             </div>
+             <div class="kutucuk">
+                <label for="username">Şifre</label>
+                <input type="Şifre" id="sifre" name="sifre" required>
+            </div> 
+                <input type="submit" value="Giriş Yap">
+            <div class="KayitOl">
+            <p>Daha önce hesap oluşturmadınız mı?<a href="YeniHesap.html"> Hesap Oluştur.</a></p>
+            </div>
+            
+
+</form>
+            

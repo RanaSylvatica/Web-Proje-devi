@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+
+
+}
+
+body{
+    background-image: url(arkaplan.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+
+
+.renk{
+    background-color: rgba(255, 99, 71, 0.256);
+    margin: 0;
+    padding: 32px 0;
+    width: 100%;
+
+}
+
+.renk ul{
+    width: 50%;
+    margin: 1% auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.renk ul li a{
+
+    
+    color: white;
+    font-size: 15px;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+    padding: 10px
+
+}
+.renk ul li a.active,
+.renk ul li a:hover{background:rgba(230, 112, 91, 0.942);
+    transition: .7s;
+
+    
+}
+.center{
+    position:absolute;
+    top:57%;
+    left:50%; 
+    transform: translate(-50%,-50%);
+    user-select: none; 
+    background: rgba(255, 255, 255, 0.588);
+    padding:30px;
+    color: rgb(35, 24, 24);
+    text-decoration :none;
+    font-size: 18px;
+}
+.arkadaslar img{
+    size: 5px 5px;
+    
+}
